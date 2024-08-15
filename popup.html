@@ -12,11 +12,13 @@
     <title>TimeMeowt Extension</title>
     <script src="popup.js"></script>
   </head>  
-  <body>
-    <div class="Heading">
-      <h1>It's Time to Stop!</h1>
+  <body class="popup-body">
+    <div class="popup-heading">
+      <h1>IT'S TIME TO STOP!</h1>
     </div>
-    <h2> Activate Extension </h2>
+    <div class="popup-container">
+    
+    <h2> ON/OFF </h2>
     <!-- <button id="clickIt"> click</button> -->
 
     <div class="extensionctrl">
@@ -26,22 +28,24 @@
       </label>
     </div>
   
-    <h2> Input sites to be blocked </h2>
-    <form name="test">
+    <div>
+    <h2> INPUT SITES TO BLOCK </h2>
+    <form class="input-container" name="test">
       <label for="siteInpt"> </label>
-      <input type="text" name="siteInpt" id="siteInpt" value="Enter site URL here" > 
-      <button type="submit" id="inptButton"> Enter </button>
+      <input class="site-inpt" type="text" name="siteInpt" id="siteInpt" value="Enter site URL here" > 
+      <button class="enter" type="submit" id="inptButton"> Enter </button>
     </form>
     </div>
 
     <div id="buttonContainer"></div>
 
     <div>
-      <button id="blockthis"> Block current site </button>
+      <button class="block-btn" id="blockthis"> Block current site </button>
     </div>
     <div>
       <h2>   </h2>
     </div>
-
+  </div>
+</div>
   </body>
 </html>
